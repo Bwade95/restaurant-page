@@ -1,1 +1,1 @@
-console.log("Hello World!");
+(()=>{"use strict";window.onload=function(){(()=>{const e=document.getElementById("content"),t=document.createElement("div");t.setAttribute("id","header"),t.innerText="This Is Food";const n=document.createElement("div");n.setAttribute("id","main-chunk");const d=document.createElement("div");d.setAttribute("id","quote"),d.innerText="How food is supposed to be made";const i=document.createElement("div");i.setAttribute("id","test"),i.innerText="test",n.appendChild(i),n.appendChild(d),e.appendChild(n),e.appendChild(t)})()}})();

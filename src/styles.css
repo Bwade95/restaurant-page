@@ -5,8 +5,16 @@ body {
     background-image: url(/img/backdrop.jpg);
 }
 
+#content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #header {
     position: absolute;
+    top: 0px;
+    left: 0px;
     padding: 20px;
     width: 14%;
     color: #ccc;
@@ -15,10 +23,19 @@ body {
     text-shadow: 1px 1px 1px #000;
 }
 
+#main-chunk {
+    position: relative;
+    display: flex;
+    padding: 80px;
+    width: 40%;
+    justify-content: center;
+    background-color: blanchedalmond;
+}
 
 #quote {
-    position: flex;
+    position: absolute;
     color: #ccc;
     font-family: "Dancing Script", sans-serif;
-    background-color: aqua;
+    font-size: 3.5ch;
+    text-shadow: 1px 1px 1px #000;
 }
