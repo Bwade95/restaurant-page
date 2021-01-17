@@ -1,41 +1,73 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@100;300;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Fraunces:wght@100;300;600&display=swap');
 
-body {
-    background-image: url(/img/backdrop.jpg);
+:root {
+    --bright-white: #fffbff;
+    --title: #c34271;
+    --shade: rgba(41, 38, 39, 0.4);
 }
 
 #content {
+    width: 100vw;
+    height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    background-image: url(/img/test2.jpg);
+    background-size: cover;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-#header {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    padding: 20px;
-    width: 14%;
-    color: #ccc;
+header {
+    width: 100%;
+}
+
+#title {
+    color: var(--title);
     font-family: "Fraunces", sans-serif;
     font-size: 3rem;
     text-shadow: 1px 1px 1px #000;
 }
 
-#main-chunk {
-    position: relative;
+nav {
     display: flex;
-    padding: 80px;
-    width: 40%;
-    justify-content: center;
-    background-color: blanchedalmond;
+    height: 90px;
 }
 
-#quote {
-    position: absolute;
+#navbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--shade);
+    border-bottom: 2px solid var(--bright-white);
+}
+
+.nav-list {
+    margin: 0 40px;
     color: #ccc;
-    font-family: "Dancing Script", sans-serif;
-    font-size: 3.5ch;
-    text-shadow: 1px 1px 1px #000;
+    font-family: "Fraunces", sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    text-shadow: 1px 1px 1px black;
+}
+
+footer {
+    height: 90px;
+    border-top: 2px solid var(--bright-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--shade);
+}
+
+footer h1 {
+    margin: auto;
+}
+
+#foot-tag {
+    color: #ccc;
+    font-family: "Fraunces", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-shadow: 1px 1px 1px black;
 }

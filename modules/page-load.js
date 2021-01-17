@@ -1,25 +1,24 @@
 const pageLoad = () => {
-    const content = document.getElementById('content');
+    const contentDiv = document.getElementById('content');
 
-    const header = document.createElement('div');
-    header.setAttribute('id', 'header');
-    header.innerText = 'This Is Food';
+    const header = document.createElement('header');
+    header.innerHTML = `
+    <nav>
+        <ol id="navbar">
+            <li class="nav-list home">Home</li>
+            <li class="nav-list menu">Menu</li>
+            <li class="nav-list contact">Contact</li>
+        </ol>
+    </nav>`;
 
-    const mainChunk = document.createElement('div');
-    mainChunk.setAttribute('id', 'main-chunk');
+    const footer = document.createElement('footer');
+    footer.innerHTML = `
+    <nav>
+        <h1 id="foot-tag">Test</h1>
+    </nav>`;
 
-    const quote = document.createElement('div');
-    quote.setAttribute('id', 'quote');
-    quote.innerText = 'How food is supposed to be made';
-
-    const test = document.createElement('div');
-    test.setAttribute('id', 'test');
-    test.innerText = 'test';
-
-    mainChunk.appendChild(test);
-    mainChunk.appendChild(quote);
-    content.appendChild(mainChunk);
-    content.appendChild(header);
+    contentDiv.appendChild(header);
+    contentDiv.appendChild(footer);
 }
 
 export default pageLoad;
