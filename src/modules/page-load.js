@@ -5,11 +5,14 @@ const pageLoad = () => {
     header.innerHTML = `
     <nav>
         <ol id="navbar">
-            <li class="nav-list home">Home</li>
-            <li class="nav-list menu">Menu</li>
-            <li class="nav-list contact">Contact</li>
+            <li data-tab-home class="nav-list">Home</li>
+            <li data-tab-menu class="nav-list">Menu</li>
+            <li data-tab-contact class="nav-list">Contact</li>
         </ol>
     </nav>`;
+
+    const main = document.createElement('main');
+    main.classList.add('tab-content');
 
     const footer = document.createElement('footer');
     footer.innerHTML = `
@@ -18,7 +21,8 @@ const pageLoad = () => {
     </nav>`;
 
     contentDiv.appendChild(header);
+    contentDiv.appendChild(main);
     contentDiv.appendChild(footer);
 }
 
-export default pageLoad;
+export { pageLoad };

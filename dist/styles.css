@@ -5,13 +5,14 @@
     --bright-white: #fffbff;
     --title: #c34271;
     --shade: rgba(41, 38, 39, 0.4);
+    --brown: #92817a;
 }
 
 #content {
     width: 100vw;
     height: 100vh;
     display: flex;
-    background-image: url(/img/test2.jpg);
+    background-image: url(./img/backdrop.jpg);
     background-size: cover;
     flex-direction: column;
     justify-content: space-between;
@@ -39,7 +40,7 @@ nav {
     justify-content: center;
     align-items: center;
     background-color: var(--shade);
-    border-bottom: 2px solid var(--bright-white);
+    border-bottom: 2px solid var(--brown);
 }
 
 .nav-list {
@@ -52,14 +53,15 @@ nav {
 }
 
 .nav-list:hover{
+    cursor: pointer;
     color: #92817A;
-    border-bottom: 2px solid #92817a;
+    border-bottom: 2px solid var(--brown);
     padding-bottom: 2px;
 }
 
 footer {
     height: 90px;
-    border-top: 2px solid var(--bright-white);
+    border-top: 2px solid var(--brown);
     display: flex;
     justify-content: center;
     align-items: center;
