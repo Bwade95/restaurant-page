@@ -12,7 +12,7 @@ const pageLoad = () => {
     </nav>`;
 
     const main = document.createElement('main');
-    main.classList.add('tab-content');
+    main.id = 'tab-content';
 
     const footer = document.createElement('footer');
     footer.innerHTML = `
