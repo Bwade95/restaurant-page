@@ -1,7 +1,7 @@
 const menuPage = () => {
     const mainDiv = document.querySelector('#tab-content');
     mainDiv.innerHTML = `
-        <div id="menu-container">
+        <div class="main-content menu scroll">
             <div class="menu-item">
                 <div class="item-content">
                     <h3>Beans on Toast <span>£0.99</span></h3>  
@@ -19,25 +19,30 @@ const menuPage = () => {
             <div class="menu-item">
                 <div class="item-content">
                     <h3>Crumpets <span>£0.99</span></h3>  
-                    <p>This food is tasty</p>
+                    <p>Almost freshly baked crumpets straight out the cupboard. Lathered with
+                    butter or dairy free butter.</p>
                 </div>
             </div>
             <div class="menu-item">
                 <div class="item-content">
                     <h3>Toast and Butter <span>£0.99</span></h3>  
-                    <p>This food is tasty</p>
+                    <p>Fresh bread straight from Tesco, toasted to perfection. Option of
+                    dairy butter or dairy free butter.</p>
                 </div>
             </div>
             <div class="menu-item">
                 <div class="item-content">
-                    <h3>Toast and Butter <span>£0.99</span></h3>  
-                    <p>This food is tasty</p>
+                    <h3>Bolognese <span>£0.99</span></h3>  
+                    <p>Choice of beef or turkey meat in this classic dish. Cooked in 
+                    Dolmios Bolgnese sauce with option of Spaghetti or Pasta 
+                    <strong>(ONLY FUSELI)</strong>.</p>
                 </div>
             </div>
             <div class="menu-item">
                 <div class="item-content">
-                    <h3>Toast and Butter <span>£0.99</span></h3>  
-                    <p>This food is tasty</p>
+                    <h3>Risotto <span>£0.99</span></h3>  
+                    <p>Fresh Risotto cooked with Chicken, Courgettes and Red Pepper.
+                    A <strong>This Is Food</strong> special!</p>
                 </div>
             </div>
             <div class="menu-item">
